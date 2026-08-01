@@ -162,7 +162,71 @@ $presentation-h3-font-size: 1.4em;
 }
 
 
+/* ===================================
+  Box-Grid & Box-Grid
+  ====================================*/
+.reveal .box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: 3px; //0.7em;
+    column-gap: 1px;
+    row-gap: 3px;
+    width: 100%;
+}
+
+.reveal .box-list {
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+}
+
+.reveal .box-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3px; //.5em;
+}
+
+/* Base box */
+.reveal .box {
+  padding: 2px; // 0.2em 0.7em;
+  border-radius: 6px;
+  white-space: normal;      // Allow wrapping
+  overflow-wrap: break-word; // Break very long words if needed
+  font-family: $font-family-sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+/* Grid layout */
+.reveal .box-grid .box {
+  width: 90%;
+  background: $theme_dark;
+  color: $theme_light;
+
+  &:nth-child(even) {
+    background: $theme_light;  // define this variable
+    color: $theme_dark;
+  }
+}
+
+.reveal .box-list .box {
+  width: 80%;
+  background: $theme_dark;
+  color: $theme_light;
+  &:nth-child(even) {
+    background: $theme_light;  // define this variable
+    color: $theme_dark;
+  }
+}
 
 
-
+.reveal .box-row .box {
+  width: 35%;
+  background: $theme-dark;
+  color: $theme-light;
+  &:nth-child(even) {
+    background: $theme-light;  // define this variable
+    color: $theme_dark;
+  }
+}
 

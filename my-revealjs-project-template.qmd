@@ -388,3 +388,71 @@ When you click the **Render** button a presentation will be generated that inclu
 ```{r}
 1 + 1
 ```
+
+
+## Ações de Gestão de Mudanças
+
+### Selecione as 3 ações mais importantes da lista abaixo:
+
+:::{.box-grid}
+::: {.box}
+1. Pedir ao CEO para enviar memorando a toda a empresa comunicando a mudança.
+:::
+::: {.box}
+2. Mudar a disposição física - salas e mesas - dos envolvidos.
+:::
+::: {.box}
+3. Desenhar um sistema de bonificação para premiar o engajamento.
+:::
+::: {.box}
+4. Analisar quem perderá, e o que será perdido, com a nova solução.
+:::
+::: {.box}
+5. Divulgar a causa e o contexto de negócio que levou a empresa a buscar a nova solução.
+:::
+::: {.box}
+6. Replanejar as metas individuais de performance.
+:::
+::: {.box}
+7. Distribuir um adesivo com logo do projeto e mensagem de comprometimento com a mudança.
+:::
+::: {.box}
+8. Colocar os melhores recursos em uma equipe para que todos tenham ela como exemplo.
+:::
+::: {.box}
+9. Conversar individualmente com membros da equipe para identificar desafios com a mudança.
+:::
+:::
+
+## Tipos de Atividades
+### Classifique as atividades do slide anterior conforme as seguintes categorias...
+<p/>
+:::{.box-row}
+::: {.box}
+A. Comunicação
+:::
+::: {.box}
+B. Estrutura
+:::
+::: {.box}
+C. Política
+:::
+::: {.box}
+D. Gestão de Pessoas
+:::
+:::
+:::{.box-row}
+::: {.box}
+.<p/>.<p/>.<p/>.<p/>.<p/>
+:::
+::: {.box}
+.<p/>.<p/>.<p/>.<p/>.<p/>
+:::
+::: {.box}
+.<p/>.<p/>.<p/>.<p/>.<p/>
+:::
+::: {.box}
+.<p/>.<p/>.<p/>.<p/>.<p/>
+:::
+:::
+
