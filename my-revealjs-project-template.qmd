@@ -9,7 +9,7 @@ filters:
 ---
 
 ## {.section-slide}
-
+<p/>
 :::{.section-number}
 1
 :::
