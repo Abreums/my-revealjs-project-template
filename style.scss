@@ -1,8 +1,62 @@
 /*-- scss:defaults --*/
 
-$body-bg: #191919;
-$body-color: #fff;
+$body-bg: #4c4c4c;
+$body-color: #FFFFFF;
 $link-color: #42affa;
+
+// ======================================
+// Brand palette
+// ======================================
+
+$theme-primary:   #2C3E50;
+$theme-secondary: #50847B;
+$theme-accent:    #F39C12;
+
+$theme-white:     #FFFFFF;
+$theme-black:     #4c4c4c;
+
+$theme-light:     #E1E8ED;
+$theme-dark:      #2C3E50;
+
+$theme-background:#FFFFFF;
+$theme-border:  #2C3E50;
+$theme-success: #50847B;
+$theme-warning: #F39C12;
+$theme-error:   #F39cef;
+
+// ======================================
+// Typography
+// ======================================
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Ovo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-main: "Roboto", sans-serif;
+$font-head: "Ovo", serif;
+$font-message: "Josefin Slab", serif;
+
+// ======================================
+// Reveal.js variables
+// ======================================
+
+$font-family-sans-serif: $font-main;
+$presentation-heading-font: $font-head;
+$presentation-heading-color: $theme-light;
+$presentation-heading-font-weight: 400;
+//$presentation-heading-font-weight: 300;  // Light
+//$presentation-heading-font-weight: 400;  // Normal
+//$presentation-heading-font-weight: 500;  // Medium
+//$presentation-heading-font-weight: 600;  // Semi-bold
+//$presentation-heading-font-weight: 700;  // Bold
+
+$body-color: $theme-light;
+$presentation-bg: $theme-error; //$theme-light;
+
+$link-color: $theme-accent; //$theme-secondary;
+
+$presentation-h1-font-size: 2.4em;
+$presentation-h2-font-size: 1.8em;
+$presentation-h3-font-size: 1.4em;
+
 
 /*-- scss:rules --*/
 
@@ -10,3 +64,105 @@ $link-color: #42affa;
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
 }
+
+/*=======================================
+  Centered Session Title
+  =======================================*/
+.reveal .section-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+
+  background-color: $theme-light;
+  text-align: center;
+
+  font-family: $font-head;
+  font-weight: 400;
+  font-size: 1.8em;
+  line-height: 1.35;
+
+  padding: 0;
+}
+
+.reveal .section-slide .section-number {
+  font-size: 1.8em;
+}
+
+.reveal .section-slide .section-name {
+  font-size: 1em;
+  //margin: 0.4em 0;
+}
+
+.reveal .section-slide .section-subname {
+  font-size: 0.7em;
+  color: $theme-secondary;
+}
+
+/*=========================================
+  Centered message slide
+  =========================================*/
+.reveal section.center-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+
+  background-color: $theme-light;
+  text-align: center;
+
+  font-family: $font-message;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1;
+
+  padding: 0;
+}
+
+/*=========================================
+  Message box
+  =========================================*/
+
+.reveal .message-box {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  background: $theme-white;
+  color: $theme-primary;
+  border-radius: 12px;
+  font-family: $font-message;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.reveal .message-box-accent {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  background: $theme-accent;
+  color: $theme-light;
+  border-radius: 12px;
+  font-family: $font-message;
+  font-size: 1.8em;
+  font-weight: 600;
+  //line-height: 1;
+}
+
+.reveal .message-box-dark {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  background: $theme-secondary;
+  color: $theme-light;
+  border-radius: 12px;
+  font-family: $font-message;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+
+
+
+
+

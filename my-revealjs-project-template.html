@@ -6,10 +6,14 @@
 <script src="my-revealjs-project-template_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="my-revealjs-project-template_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="my-revealjs-project-template_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="my-revealjs-project-template_files/libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="my-revealjs-project-template_files/libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="my-revealjs-project-template_files/libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
+<script src="my-revealjs-project-template_files/libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
+<link href="my-revealjs-project-template_files/libs/quarto-contrib/roughnotation-init-1.0.0/rough.css" rel="stylesheet">
+<script src="my-revealjs-project-template_files/libs/quarto-contrib/roughnotation-flourish-bridge-1.0.0/flourish-bridge.js"></script><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.39">
 
-  <title>letterbox slides</title>
+  <title>my-revealjs-project-template</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -93,10 +97,11 @@
     code span.vs { color: #abe338; } /* VerbatimString */
     code span.wa { color: #dcc6e0; } /* Warning */
   </style>
-  <link rel="stylesheet" href="my-revealjs-project-template_files/libs/revealjs/dist/theme/quarto-9daafee85651f43cfc5733b491853f9d.css">
+  <link rel="stylesheet" href="my-revealjs-project-template_files/libs/revealjs/dist/theme/quarto-9293602ea76eb09bde46183ddfa7c5ba.css">
   <link href="my-revealjs-project-template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="my-revealjs-project-template_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="my-revealjs-project-template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="my-revealjs-project-template_files/libs/revealjs/plugin/reveal-chat-bubbles/chat-bubbles.css" rel="stylesheet">
   <link href="my-revealjs-project-template_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
@@ -190,13 +195,318 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">letterbox slides</h1>
-  <p class="subtitle">quarto-revealjs-letterbox</p>
 
-<div class="quarto-title-authors">
+<section id="section" class="slide level2 section-slide">
+<h2></h2>
+<div class="section-number">
+<p>1</p>
 </div>
-
+<div class="section-name">
+<p>Estudo de Caso</p>
+</div>
+<div class="section-subname">
+<p>sub-título</p>
+</div>
+</section>
+<section id="section-1" class="slide level2" data-background-image="flowers-many.jpeg">
+<h2></h2>
+<div class="message-box">
+<p>As pessoas não temem a mudança, elas temem a incerteza.</p>
+</div>
+</section>
+<section id="section-2" class="slide level2" data-background-image="flowers-many.jpeg">
+<h2></h2>
+<div class="message-box-accent">
+<p>As pessoas não temem a mudança, elas temem a incerteza.</p>
+</div>
+</section>
+<section id="section-3" class="slide level2" data-background-image="flowers-many.jpeg">
+<h2></h2>
+<div class="message-box-dark">
+<p>As pessoas não temem a mudança, elas temem a incerteza.</p>
+</div>
+</section>
+<section id="annotation-types" class="slide level2">
+<h2>Annotation Types</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>highlight</code></td>
+<td>Yellow marker highlight (default)</td>
+</tr>
+<tr class="even">
+<td><code>underline</code></td>
+<td>Underline the text</td>
+</tr>
+<tr class="odd">
+<td><code>box</code></td>
+<td>Draw a box around the element</td>
+</tr>
+<tr class="even">
+<td><code>circle</code></td>
+<td>Draw a circle around the element</td>
+</tr>
+<tr class="odd">
+<td><code>strike-through</code></td>
+<td>Strike through the text</td>
+</tr>
+<tr class="even">
+<td><code>crossed-off</code></td>
+<td>Cross off with an X</td>
+</tr>
+<tr class="odd">
+<td><code>bracket</code></td>
+<td>Draw brackets around the element</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="options" class="slide level2">
+<h2>Options</h2>
+<p>All options are prefixed with <code>rn-</code>:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 30%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>rn-type</code></td>
+<td><code>rn-type=underline</code></td>
+<td>Annotation style</td>
+</tr>
+<tr class="even">
+<td><code>rn-color</code></td>
+<td><code>rn-color=blue</code></td>
+<td>Annotation color</td>
+</tr>
+<tr class="odd">
+<td><code>rn-animate</code></td>
+<td><code>rn-animate=false</code></td>
+<td>Disable animation</td>
+</tr>
+<tr class="even">
+<td><code>rn-animationDuration</code></td>
+<td><code>rn-animationDuration=2000</code></td>
+<td>Animation duration in ms</td>
+</tr>
+<tr class="odd">
+<td><code>rn-strokeWidth</code></td>
+<td><code>rn-strokeWidth=3</code></td>
+<td>Line thickness</td>
+</tr>
+<tr class="even">
+<td><code>rn-padding</code></td>
+<td><code>rn-padding=10</code></td>
+<td>Space around element</td>
+</tr>
+<tr class="odd">
+<td><code>rn-multiline</code></td>
+<td><code>rn-multiline=true</code></td>
+<td>Annotate across multiple lines</td>
+</tr>
+<tr class="even">
+<td><code>rn-iterations</code></td>
+<td><code>rn-iterations=1</code></td>
+<td>Number of drawing passes</td>
+</tr>
+<tr class="odd">
+<td><code>rn-brackets</code></td>
+<td><code>rn-brackets=left,right</code></td>
+<td>Bracket sides (for bracket type)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rn-type" class="slide level2">
+<h2>rn-type</h2>
+<p>Set the annotation style. Default is <code>highlight</code>.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="red" data-fragment-index="1">Underline</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="box" data-rn-color="purple" data-fragment-index="2">Box</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="circle" data-rn-color="blue" data-fragment-index="3">Circle</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="highlight" data-fragment-index="4">Highlight</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="strike-through" data-rn-color="green" data-fragment-index="5">Strike-Through</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="crossed-off" data-rn-color="orange" data-fragment-index="6">Crossed-off</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="bracket" data-rn-color="teal" data-fragment-index="7">Bracket</span></p>
+</div><div class="column" style="width:50%;">
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="red" data-fragment-index="8">
+<p>Div with <code>rn-type=box</code></p>
+</div>
+</div></div>
+</section>
+<section id="rn-color" class="slide level2">
+<h2>rn-color</h2>
+<p>Set the annotation color. Default is yellow highlight color.</p>
+<p><span class="rn-fragment fragment" data-rn-color="blue" data-fragment-index="1">Blue</span> | <span class="rn-fragment fragment" data-rn-color="red" data-fragment-index="2">Red</span> | <span class="rn-fragment fragment" data-rn-color="green" data-fragment-index="3">Green</span> | <span class="rn-fragment fragment" data-rn-color="purple" data-fragment-index="4">Purple</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="orange" data-fragment-index="5">
+<p>Div with <code>rn-color=orange</code></p>
+</div>
+</section>
+<section id="rn-color-formats" class="slide level2">
+<h2>rn-color (formats)</h2>
+<p>Colors can be specified in multiple formats:</p>
+<div style="font-size: 0.9em;">
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="tomato" data-fragment-index="1">Color name</span> - <code>rn-color=tomato</code></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="#3498db" data-fragment-index="2">Hex code</span> - <code>rn-color=#3498db</code></p>
+<p><span class="rn-fragment fragment" data-rn-type="highlight" data-rn-color="#e74c3c80" data-fragment-index="3">Hex with alpha</span> - <code>rn-color=#e74c3c80</code> (50% opacity)</p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="rgb(46, 204, 113)" data-fragment-index="4">RGB</span> - <code>rn-color="rgb(46, 204, 113)"</code></p>
+<p><span class="rn-fragment fragment" data-rn-type="highlight" data-rn-color="rgba(155, 89, 182, 0.5)" data-fragment-index="5">RGBA</span> - <code>rn-color="rgba(155, 89, 182, 0.5)"</code></p>
+</div>
+</section>
+<section id="rn-animate" class="slide level2">
+<h2>rn-animate</h2>
+<p>Disable animation with <code>rn-animate=false</code>. Default is <code>true</code>.</p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="blue" data-fragment-index="1">With animation (default)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="red" data-rn-animate="false" data-fragment-index="2">Without animation</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="green" data-rn-animate="false" data-fragment-index="3">
+<p>Div without animation</p>
+</div>
+</section>
+<section id="rn-animationduration" class="slide level2">
+<h2>rn-animationDuration</h2>
+<p>Set animation duration in milliseconds. Default is <code>800</code>.</p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="blue" data-rn-animationduration="200" data-fragment-index="1">Fast (200ms)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="green" data-fragment-index="2">Default (800ms)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="red" data-rn-animationduration="2000" data-fragment-index="3">Slow (2000ms)</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="purple" data-rn-animationduration="1500" data-fragment-index="4">
+<p>Div with 1500ms animation</p>
+</div>
+</section>
+<section id="rn-strokewidth" class="slide level2">
+<h2>rn-strokeWidth</h2>
+<p>Set line thickness. Default is <code>1</code>.</p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="blue" data-rn-strokewidth="1" data-fragment-index="1">Thin (1)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="green" data-rn-strokewidth="3" data-fragment-index="2">Medium (3)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="red" data-rn-strokewidth="5" data-fragment-index="3">Thick (5)</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="purple" data-rn-strokewidth="4" data-fragment-index="4">
+<p>Div with <code>rn-strokeWidth=4</code></p>
+</div>
+</section>
+<section id="rn-padding" class="slide level2">
+<h2>rn-padding</h2>
+<p>Set space around the element in pixels. Default is <code>5</code>.</p>
+<p><span class="rn-fragment fragment" data-rn-type="box" data-rn-color="blue" data-rn-padding="0" data-fragment-index="1">No padding (0)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="box" data-rn-color="green" data-fragment-index="2">Default padding (5)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="box" data-rn-color="red" data-rn-padding="20" data-fragment-index="3">Large padding (20)</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="circle" data-rn-color="purple" data-rn-padding="15" data-fragment-index="4">
+<p>Div with <code>rn-padding=15</code></p>
+</div>
+</section>
+<section id="rn-multiline" class="slide level2">
+<h2>rn-multiline</h2>
+<p>Enable annotations across multiple lines with <code>rn-multiline=true</code>.</p>
+<p>Lorem ipsum dolor sit amet. <span class="rn-fragment fragment" data-rn-multiline="true" data-fragment-index="1">This span wraps across multiple lines to demonstrate the multiline option working correctly.</span> Consectetur adipiscing elit.</p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="purple" data-rn-multiline="true" data-fragment-index="2">
+<p>This div spans multiple lines and uses multiline mode for proper annotation rendering.</p>
+</div>
+</section>
+<section id="rn-iterations" class="slide level2">
+<h2>rn-iterations</h2>
+<p>Set the number of drawing passes. Default is <code>2</code>. Higher values create rougher look.</p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="blue" data-rn-iterations="1" data-fragment-index="1">One pass (1)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="green" data-fragment-index="2">Default (2)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="red" data-rn-iterations="5" data-fragment-index="3">Many passes (5)</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="purple" data-rn-iterations="4" data-fragment-index="4">
+<p>Div with <code>rn-iterations=4</code></p>
+</div>
+</section>
+<section id="rn-brackets" class="slide level2">
+<h2>rn-brackets</h2>
+<p>For <code>rn-type=bracket</code>, specify which sides to draw. Options: <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>.</p>
+<p><span class="rn-fragment fragment" data-rn-type="bracket" data-rn-color="blue" data-fragment-index="1">Right bracket (default)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="bracket" data-rn-color="green" data-rn-brackets="left" data-fragment-index="2">Left bracket</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="bracket" data-rn-color="red" data-rn-brackets="left,right" data-fragment-index="3">Both sides</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="bracket" data-rn-color="purple" data-rn-brackets="top,bottom" data-fragment-index="4">
+<p>Div with top and bottom brackets</p>
+</div>
+</section>
+<section id="rn-rtl" class="slide level2">
+<h2>rn-rtl</h2>
+<p>Draw annotation right-to-left with <code>rn-rtl=true</code>. Default is <code>false</code>.</p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="blue" data-fragment-index="1">Left-to-right (default)</span></p>
+<p><span class="rn-fragment fragment" data-rn-type="underline" data-rn-color="red" data-rn-rtl="true" data-fragment-index="2">Right-to-left</span></p>
+<p><br></p>
+<div class="rn-fragment fragment" data-rn-type="box" data-rn-color="purple" data-rn-rtl="true" data-fragment-index="3">
+<p>Div with right-to-left animation</p>
+</div>
+</section>
+<section id="chat" class="slide level2">
+<h2>chat</h2>
+<div class="chat">
+<div class="bubble-right">
+<p>Hey, are you coming tonight?</p>
+</div>
+<div class="fragment bubble-left">
+<p>Yeah! What time does it start?</p>
+</div>
+<div class="fragment bubble-right">
+<p>Doors open at 7</p>
+</div>
+</div>
+</section>
+<section id="more" class="slide level2">
+<h2>more…</h2>
+<div class="chat">
+<div class="bubble-right">
+<p>There are more things in heaven and earth, Horatio.</p>
+</div>
+<p><span class="fragment reaction">😮</span> <span class="fragment reaction">👍</span></p>
+<div class="fragment bubble-left">
+<p>O day and night, but this is wondrous strange!</p>
+</div>
+<p><span class="fragment reaction">😂</span> ::: {.fragment .reaction} 😂</p>
+</div>
+<p>:::</p>
+</section>
+<section id="reaction." class="slide level2">
+<h2>reaction.</h2>
+<div class="chat">
+<div class="bubble-right">
+<p>Message one</p>
+</div>
+<p><span class="fragment reaction" data-fragment-index="3">😮</span></p>
+<div class="fragment bubble-left" data-fragment-index="1">
+<p>Message two</p>
+</div>
+<div class="fragment bubble-right" data-fragment-index="2">
+<p>Message three</p>
+</div>
+</div>
+</section>
+<section id="typing." class="slide level2">
+<h2>typing.</h2>
+<div class="chat">
+<div class="bubble-right">
+<p>Are you still there?</p>
+</div>
+<div class="fragment bubble-left typing">
+<p>Sorry, was typing a really long reply.</p>
+</div>
+</div>
 </section>
 <section id="image-right" class="slide level2">
 <h2>.image-right</h2>
@@ -217,7 +527,7 @@
 </div></div>
 
 <img data-src="flowers-two.jpeg" class="image-left r-stretch"></section>
-<section id="section" class="slide level2" data-background-image="flowers-many.jpeg" data-background-size="100px" data-background-repeat="repeat">
+<section id="section-4" class="slide level2" data-background-image="flowers-many.jpeg" data-background-size="100px" data-background-repeat="repeat">
 <h2></h2>
 <div class="r-fit-text">
 <p><span style="color: hotpink;">background images</span></p>
@@ -226,10 +536,6 @@
 <section id="setting-background-colors" class="slide level2" data-background-color="aquamarine">
 <h2>Setting background colors</h2>
 <p>you can set your background as you normally would</p>
-</section>
-<section id="video-slide-title" class="slide level2" data-background-video="video.mp4" data-background-video-loop="true" data-background-video-muted="true">
-<h2>Video Slide Title</h2>
-<p>This slides’s background video will play in a loop with audio muted.</p>
 </section>
 <section id="slide-title" class="slide level2" data-background-iframe="https://example.com">
 <h2>Slide Title</h2>
@@ -299,6 +605,7 @@
   <script src="my-revealjs-project-template_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="my-revealjs-project-template_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="my-revealjs-project-template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="my-revealjs-project-template_files/libs/revealjs/plugin/reveal-chat-bubbles/chat-bubbles.js"></script>
   <script src="my-revealjs-project-template_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -491,7 +798,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChatBubbles, QuartoSupport,
 
           RevealMath,
           RevealNotes,
